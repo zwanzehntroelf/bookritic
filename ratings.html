@@ -82,18 +82,30 @@
         <h1 itemprop="headline">    RATE THE BOOK       </h1>
         </div>
         
-         
-        
+
  <div itemprop="articleBody" class="com-content-article__body">
-        <div id="textwrap"
-		
-<!-- Simple Book Rating Form -->
 
+	
+ <!-- Simple Book Rating Form -->
+<div id="textwrap">
+    <form id="ratingForm" onsubmit="submitRating(); return false;">
+        <label for="bookTitle">Book Title:</label>
+        <input type="text" id="bookTitle" name="bookTitle" required>
 
-<form id="ratingForm" onsubmit="submitRating(); return false;">
-    <!-- Form fields as before -->
-    <input type="submit" value="Submit Rating">
-</form>
+        <label for="languageRating">Language Rating:</label>
+        <input type="number" id="languageRating" name="languageRating" min="1" max="5" required>
+
+        <label for="entertainmentRating">Entertainment Rating:</label>
+        <input type="number" id="entertainmentRating" name="entertainmentRating" min="1" max="5" required>
+
+        <label for="innovationRating">Innovation Rating:</label>
+        <input type="number" id="innovationRating" name="innovationRating" min="1" max="5" required>
+
+        <input type="submit" value="Submit Rating">
+    </form>
+	
+</div>
+	 
 <script>
     function submitRating() {
         const bookTitle = document.getElementById('bookTitle').value;
