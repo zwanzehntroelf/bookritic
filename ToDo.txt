@@ -1,0 +1,4 @@
+Impressum ergänzen:  information about the website owner, including their name, address, and contact details. This is particularly relevant for commercial websites and websites with journalistic/editorial content.
+
+
+The GDPR requires websites to provide clear and transparent information about how they collect, process, and store personal data. This might include providing contact information for data protection inquiries and explaining the purpose and legal basis for data processing.
